@@ -522,16 +522,17 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    gap: 10px;
 }
 
 .filter-item {
-    margin: 5px;
     padding: 8px 20px;
     background: var(--card-bg);
     color: var(--text-color);
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
 .filter-item.active, .filter-item:hover {
@@ -544,6 +545,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+    width: 100%;
 }
 
 .portfolio-item {
@@ -551,6 +553,7 @@ section {
     border-radius: 10px;
     overflow: hidden;
     height: 250px;
+    aspect-ratio: 1/1;
 }
 
 .portfolio-img {
